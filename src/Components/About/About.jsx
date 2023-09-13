@@ -17,8 +17,17 @@ const About = () => {
           <div className="m-auto p-2 grid grid-cols-1 md:grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2">
             <div className="relative">
               <div className="p-5">
-                <div className="absolute top-1 left-1 flex items-center justify-center w-full h-full opacity-0 bg-transparent rounded-full transition-all ease-in-out duration-300 hover:opacity-100 hover:backdrop-blur-sm ">
-                  <div className=" text-slate-100 text-2xl font-semibold">
+                {/* <div className="">
+                  <div className="absolute top-1 right-1 text-slate-100 text-2xl bg-slate-700 p-2 rounded-lg backdrop:blur-sm">
+                    <span className="text-yellow-400">hover me</span> to view my
+                    skills
+                  </div>
+                  <i className="fa fa-circle text-sm text-slate-100 block absolute top-[11rem] right-[20rem]"></i>
+                  <i className="fa fa-circle text-md text-slate-100 block absolute top-[10rem] right-[18rem]"></i>
+                  <i className="fa fa-circle text-lg text-slate-100 block absolute top-[8rem] right-[15rem]"></i>
+                </div> */}
+                <div className="absolute top-1 left-1 flex items-center justify-center opacity-0 hover:opacity-100 w-full h-full bg-transparent rounded-full transition-all ease-in-out duration-300 hover:backdrop-blur-sm ">
+                  <div className=" text-slate-100 text-2xl font-semibold ">
                     <div className="text-5xl stroke-slate-500">SKILLS</div>
                     {items.skills.map((ele) => (
                       <div key={ele.title} className="p-2">
@@ -63,7 +72,7 @@ const About = () => {
                       Anup
                     </span>{" "}
                     frontend developer at spring computing technology in React
-                    JS, working remotely for Intellivion from Wani, Maharashtra.
+                    JS.
                   </div>
                   <div className="text-lg text-left">
                     <p className="p-2">

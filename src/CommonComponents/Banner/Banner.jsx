@@ -12,7 +12,7 @@ const Banner = () => {
           key={details.id}
         >
           <article>
-            <div className="h-screen flex items-center flex-col p-5">
+            <div className="h-full flex items-center flex-col p-5 lg:h-screen lg:flex lg:items-center lg:flex-col">
               <div className="flex-grow flex justify-center flex-col">
                 <h5 className="text-slate-200 font-semibold text-lg">
                   Hi, there
@@ -49,13 +49,13 @@ const Banner = () => {
             </div>
           </article>
           <article>
-            <div className="h-screen bg-slate-400 rounded-lg p-5 flex items-center">
+            <div className="h-3/4 bg-slate-400 rounded-lg p-5 flex items-center lg:h-screen">
               <div className="h-96 w-full bg-yellow-400 rounded-full rotate-[135deg]">
-                <div className="w-full h-full flex justify-center">
+                <div className="w-full h-full flex justify-center items-center lg:items-start">
                   <img
                     src={profile}
                     alt="profile_Image"
-                    className="w-4/5 h-[35rem] object-contain rotate-[225deg] hover:scale-110 transition-all ease-linear duration-300"
+                    className="lg:w-4/5 w-5/5 h-[35rem] object-contain rotate-[225deg] hover:scale-110 transition-all ease-linear duration-300"
                   />
                 </div>
               </div>

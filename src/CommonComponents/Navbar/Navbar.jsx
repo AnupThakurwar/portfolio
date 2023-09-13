@@ -30,17 +30,17 @@ function Navbar() {
         <div className="flex-1">
           <ul className="block justify-center md:block sm:block lg:flex xl:flex 2xl:flex">
             <li className="p-2 text-slate-100 font-semibold hover:bg-slate-900 hover:rounded-lg transition-all duration-500 hover:cursor-pointer">
-              <HashLink to="#" smooth>
+              <HashLink to="#" onClick={navBarClick} smooth>
                 Home
               </HashLink>
             </li>
             <li className="p-2 text-slate-100 font-semibold hover:bg-slate-900 hover:rounded-lg transition-all duration-500 hover:cursor-pointer">
-              <HashLink to="#experience" smooth>
+              <HashLink to="#experience" onClick={navBarClick} smooth>
                 Experience
               </HashLink>
             </li>
             <li className="p-2 text-slate-100 font-semibold hover:bg-slate-900 hover:rounded-lg transition-all duration-500 hover:cursor-pointer">
-              <HashLink to="#about" smooth>
+              <HashLink to="#about" onClick={navBarClick} smooth>
                 About
               </HashLink>
             </li>
