@@ -3,7 +3,7 @@ import React from "react";
 const ExperienceCard = ({ details }) => {
   return (
     <div className=" w-full p-2" key={details.companyName}>
-      <div className="ring h-full rounded-lg">
+      <div className="ring rounded-lg">
         <div className="h-96">
           <img
             src={details.projectImage}
@@ -11,7 +11,7 @@ const ExperienceCard = ({ details }) => {
             className="h-full w-full rounded-lg object-cover"
           />
         </div>
-        <div className=" m-2">
+        <div className="m-2 h-96 overflow-scroll">
           <div className="h-12 flex items-center justify-between px-2 py-2 bg-slate-300 rounded-lg">
             <img
               src={details.logo}
